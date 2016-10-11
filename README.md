@@ -1,9 +1,9 @@
 
 https://github.com/ARMmbed/mbed-os-example-blinky
 
-mbed target
+mbed target UBLOX_C027
 
-mbed toolchain
+mbed toolchain GCC_ARM
 
 /med-os/hal/targets/
 
@@ -11,22 +11,42 @@ add "features": ["IPV4"] at the end
 
 
 
+
 +---------------------+-------+-------+-------+
+
 | Module              | .text | .data |  .bss |
+
 +---------------------+-------+-------+-------+
+
 | Fill                |   135 |     5 |    24 |
+
 | Misc                | 30867 |  2224 |   112 |
+
 | features/frameworks |    44 |     0 |     0 |
+
 | features/net        | 35162 |   167 |  2709 |
+
 | hal/common          |  1818 |     4 |   277 |
+
 | hal/targets         |  3734 |     4 |   364 |
+
 | rtos/rtos           |   197 |     4 |     0 |
+
 | rtos/rtx            |  7397 |    20 |  6786 |
+
 | Subtotals           | 79354 |  2428 | 10272 |
+
 +---------------------+-------+-------+-------+
+
 Allocated Heap: 2048 bytes
+
 Allocated Stack: 3072 bytes
+
 Total Static RAM memory (data + bss): 12700 bytes
+
 Total RAM memory (data + bss + heap + stack): 17820
+
 Total Flash memory (text + data + misc): 81782 bytes
+
 Image: .\BUILD\UBLOX_C027\GCC_ARM\C027Ethernet.bin
+
